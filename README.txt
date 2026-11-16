@@ -4,7 +4,7 @@ Extract the complete ZIP into a directory on any static HTTP(S) host. No databas
 
 All asset paths are relative, including when hosted under /some/subdirectory/. No rewrite rules are needed: routes use index.html#/cabin/cabin, index.html#/group/<group-id> and index.html#/scmp/<URL-encoded-exact-Component-ID>.
 
-Hosting URL not configured. Set it in Builder before producing permanent QR destinations.
+Deployment and QR destinations are recorded in qr-urls.json.
 Keep the deployment directory, cabin identifier and source Component IDs stable when replacing a publication. Replace the full package atomically and configure cache revalidation for index.html, JavaScript and data/passport.json. Removed components show unavailable; keep an approved component in the publication to preserve its passport.
 
 Only selected components and their confirmed documents are included. Cabin assessment summaries require all components and explicit approval; partial selections show no cabin assessment scores. Grouping never recalculates scores. Every included file is readable by anyone with host access; role selectors are presentation only. Arrange internal network access with Damen IT if required. External document references remain dependent on their destination.

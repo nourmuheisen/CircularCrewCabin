@@ -1,0 +1,1 @@
+export const roles=["Public","Ship Owner","Shipyard","Supplier","Recycler","Class / Authority"];

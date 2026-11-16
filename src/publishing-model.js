@@ -1,0 +1,1 @@
+export function safeReference(v){try{const u=new URL(v);return ["http:","https:"].includes(u.protocol)&&!u.username&&!u.password?u.href:null;}catch{return null;}}
